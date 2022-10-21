@@ -1,10 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-function Header(){
+function Heading(){
     return(
-        <h1>Keeper</h1>
+        <header>
+            <h1>Keeper</h1>
+        </header>
     );
 }
 
-export default Header;
+export default Heading;

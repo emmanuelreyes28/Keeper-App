@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createRoot, render } from "react-dom/client";
 import App from "./components/App";
 //1. Create a new React app.
 //2. Create a App.jsx component.
@@ -13,4 +14,7 @@ import App from "./components/App";
 //https://l1pp6.csb.app/
 
 //HINT: You will need to study the classes in teh styles.css file to appy styling.
-ReactDOM.render(<App />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App/>);
+//ReactDOM.render(<App />, document.getElementById("root"));
